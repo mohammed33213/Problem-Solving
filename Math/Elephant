@@ -1,0 +1,24 @@
+# Elephant 
+# CodeForces - 617A 
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+int main()
+{
+
+    float x;
+    cin >>x ;
+
+
+    if(x)
+{ 
+    cout << ceil ( x / 5 ) <<endl;
+}
+    else
+{
+    cout << ceil ( x / 5 )+1<<endl;
+}
+    return 0;
+}
