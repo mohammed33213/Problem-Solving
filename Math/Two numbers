@@ -1,0 +1,18 @@
+# Two numbers 
+# Gym - 287306G 
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+int main()
+{
+    float A,E;
+    cin>>A>>E;
+    
+    cout  << "floor "<<A<<" / "<<E<<" = "<<int(A/E)<<endl;
+    cout << "ceil "<<A<<" / "<<E<<" = "<<ceil (A/E)<<endl;
+    cout << "round "<<A<<" / "<<E<<" = "<<round (A/E)<<endl;
+
+    return 0;
+}
