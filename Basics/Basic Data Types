@@ -1,0 +1,20 @@
+// Basic Data Types
+// Source: Codeforces Gym 219158B
+
+
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+using namespace std;
+
+int main() {
+int n;
+long long l;
+char a;
+float f;
+double m;
+ 
+cin>>n>>l>>a>>f>>m;
+cout <<n<< endl <<l << endl <<a << endl <<  fixed << setprecision(2) << f << endl << m << endl;
+ 
+} 
