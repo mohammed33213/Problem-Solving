@@ -1,0 +1,22 @@
+# Shout Everyday 
+# AtCoder - abc367_a 
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int A, B, C;
+    cin >> A >> B >> C;
+
+    if ((B < A && A < C) || (C < B && (A < C || A > B)))
+    {
+        cout << "No";
+    }
+    else
+    {
+        cout << "Yes";
+    }
+
+    return 0;
+}
