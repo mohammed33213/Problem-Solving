@@ -1,0 +1,16 @@
+# Wizards' Duel 
+# CodeForces - 591A 
+
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+  double L ;//Lengh
+  double P ;//Harry magic speed
+  double Q ;//voldmetar magic speed
+  cin >> L >> P >> Q ;
+
+  cout<<(P*L)/ (P+Q) ;
+    return 0;
+}
