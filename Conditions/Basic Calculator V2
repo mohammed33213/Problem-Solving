@@ -1,0 +1,32 @@
+# Basic Calculator
+# Source: ICPC THEBES Training '27
+
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+using namespace std;
+int main() {
+long long n,l;
+char m;
+cin >>n>>m>>l;
+ 
+if (m=='+')
+{
+    cout<< n + l ;
+}
+ 
+else if (m=='-')
+{
+    cout<< n - l ;
+}
+else if (m=='*')
+{
+    cout<< n * l ;
+}
+else if (m=='/')
+{
+    cout<< n / l ;
+}
+ 
+return 0;
+}
