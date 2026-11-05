@@ -1,0 +1,22 @@
+# Integer Division 
+# AtCoder - abc239_b 
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    long long a;
+    cin >> a;
+    long long res=a/10;
+
+    if (a < 0 && a%10!=0)
+    {
+    cout << res -1 ;
+    }
+    else
+    {
+    cout << res ;
+    }
+
+    return 0;
+}
