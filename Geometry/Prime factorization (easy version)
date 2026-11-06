@@ -1,0 +1,40 @@
+# Prime factorization (easy version) 
+# Gym - 556990C 
+
+#include <iostream>
+using namespace std;
+void  primeFactorization(long long x){
+
+while (x%2==0)
+{
+    cout <<2<<" ";
+    x/=2;
+}
+for (long long i = 3; i*i <= x; i+=2)
+{
+
+
+    while (x%i==0)
+    {
+        cout<<i<<" ";
+        x/=i;
+    }
+
+    if (x==1)
+    {
+        break;
+    } 
+}
+
+    if(x>1){
+    cout <<x;
+    }
+cout <<endl;
+}
+
+int main(){
+long long x;
+cin >>x;
+primeFactorization(x);
+    return 0;
+}
