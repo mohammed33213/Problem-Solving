@@ -1,0 +1,35 @@
+# Is it Prime (hard version) 
+# Gym - 556990D 
+
+#include <iostream>
+using namespace std;
+const int N = 1e6;
+bool prime[N + 1];
+
+int main() {
+
+    int q;
+    cin >> q;
+
+    for (int i = 2; i <= N; i++)
+        prime[i] = true;
+
+    for (int i = 2; i * i <= N; i++)
+    {
+        if (prime[i])
+        {
+            for (int j = i * i; j <= N; j += i)
+                prime[j] = false;
+        }
+    }
+
+    while (q--)
+    {
+        int n;
+        cin >> n;
+
+        cout << (prime[n] ? "YES" : "NO") << '\n';
+    }
+
+    return 0;
+}
