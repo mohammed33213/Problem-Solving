@@ -1,0 +1,23 @@
+# Compare 
+# Gym - 219856C 
+
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main() {
+string A,B;
+cin >>A>>B;
+string smallest = min(A,B);
+
+if (A==B)
+{
+    cout <<A,B;
+}
+else 
+{
+    cout <<smallest<<endl;
+}
+  
+    return 0;
+}
