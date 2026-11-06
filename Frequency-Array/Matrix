@@ -1,0 +1,46 @@
+# Matrix 
+# Gym - 219774T 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n,sumone =0,sumtwo =0,result;
+    cin >> n ;  
+    int arr [n][n] ;  
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            cin >> arr[i][j];//تمام
+    }
+    }
+
+    for (int i = 0; i < n; i++) {//بدايه اللعب
+        for (int j = 0 ; j < n; j++) {
+           //cout << arr[i][j] << " ";  
+            if (i==j)
+{
+            sumone+=arr[i][j];
+}
+            if ( i+j == n-1)
+            {
+                sumtwo+=arr[i][j];//n−1
+            }
+            
+    }
+
+    }
+    if (sumone-sumtwo<0)
+    {
+        result=-(sumone-sumtwo);
+        cout << result<<endl;
+    }
+    else
+    {
+    result=(sumone-sumtwo);
+    cout <<result<<endl;
+    }
+    
+
+    return 0;
+}
