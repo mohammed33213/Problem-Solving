@@ -1,0 +1,20 @@
+# Let's use Getline
+# Gym - 219856B 
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+string A;
+getline(cin , A);
+
+for (int i = 0; i < A.size(); i++)
+{
+    if (A[i]=='\\') 
+        break;
+        cout <<A[i];
+}
+    
+    return 0;
+}
