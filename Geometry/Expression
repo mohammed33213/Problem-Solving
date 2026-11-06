@@ -1,0 +1,18 @@
+# Expression
+# CodeForces - 479A 
+
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main() {
+int x,y,z;
+cin>>x>>y>>z;
+int result1,result2,result3,result4,result5,result6,result7,result8,solve;
+
+result1=x + y + z;result2=x + y * z;result3=x * y + z;result4=x * y * z;
+result5 =x * (y + z);result6=x + (y * z);result7=(x + y) * z;result8=(x * y) + z;
+solve = max({result1,result2,result3,result4,result5,result6,result7,result8});
+cout <<solve<<endl;
+    return 0;
+}
